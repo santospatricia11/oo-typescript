@@ -2,7 +2,8 @@ import { Credito } from "../Credito";
 import { Debito } from "../Debito";
 
 export abstract class Conta {
-  private numero: String;
+  //private numero: String;
+  constructor(private numero: string) {}
   public credito: Credito[] = [];
   public debito: Debito[] = [];
 
