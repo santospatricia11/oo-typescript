@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts"
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
+    "start": "npm run aplicacao_1 && npm run aplicacao_2 && npm run aplicacao_3 && npm run aplicacao_4 && npm run aplicacao_5",
+    "aplicacao_1": "tsc && node dist/aplicacao/AplicacaoUm.js",
+    "aplicacao_2": "tsc && node dist/aplicacao/AplicacaoDois.js",
+    "aplicacao_3": "tsc && node dist/aplicacao/AplicacaoTres.js",
+    "aplicacao_4": "tsc && node dist/aplicacao/AplicacaoQuatro.js",
+    "aplicacao_5": "tsc && node dist/aplicacao/AplicacaoCinco.js"
   },
   "keywords": [],
   "author": "",

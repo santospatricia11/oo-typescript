@@ -1,5 +1,6 @@
 import { Credito } from "../Credito";
 import { Debito } from "../Debito";
+import { ExcetionErroCliente } from "../../exception/ExcetionErroCliente";
 
 export abstract class Conta {
   //private numero: String;
@@ -7,15 +8,17 @@ export abstract class Conta {
   public credito: Credito[] = [];
   public debito: Debito[] = [];
 
-  private depositar(valor: number, date = new Date()): void {
+  public depositar(valor: number, date = new Date()): void {
     const credito = new Credito(valor, date, this.numero);
     this.credito.push(credito);
   }
 
-  private sacar(valor: number, date = new Date()): void {
+  public sacar(valor: number, date = new Date()): void {
     if (this.calcularSaldo() >= valor) {
       const debito = new Debito(valor, date, this.numero);
       this.debito.push(debito);
+    } else {
+      throw new ExcetionErroCliente("Saldo insuficiente", 403);
     }
   }
 
