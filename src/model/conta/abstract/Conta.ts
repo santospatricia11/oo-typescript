@@ -1,6 +1,6 @@
 import { Credito } from "../Credito";
 import { Debito } from "../Debito";
-import { ExcetionErroCliente } from "../../exception/ExcetionErroCliente";
+import { ExcetionErroCliente } from "../../erro/ExcetionErroCliente";
 
 export abstract class Conta {
   //private numero: String;
