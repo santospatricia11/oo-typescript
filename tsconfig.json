@@ -4,6 +4,6 @@
     "module": "commonJS",
     "outDir": "dist"
   },
-  "include": ["./src/**/*.ts", "src/aplicacao/AplicacaoUm.ts"],
+  "include": ["./src/**/*.ts", "src/aplicacoes/AplicacaoUm.ts"],
   "exclude": ["./dist", "./node_modules"]
 }
