@@ -1,5 +1,5 @@
 import { Pessoa } from "../cliente/abstract/Pessoa";
-import { IUsuario } from "../IUsuario";
+import { IUsuario } from "../interface/IUsuario";
 import { Cargo } from "./Cargo";
 
 export class Funcionario extends Pessoa implements IUsuario {

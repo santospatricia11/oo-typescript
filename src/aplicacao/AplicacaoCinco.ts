@@ -1,13 +1,13 @@
 import { Cliente } from "../model/cliente/Cliente";
 import { Endereco } from "../model/cliente/Endereco";
-import { ContaCorrente } from "../model/conta/ContaCorrente";
+import { ContaPoupanca } from "../model/conta/ContaPoupanca";
 
 const clienteUm = new Cliente(
   "329.421.909-23",
   "Patrícia dos S. Pereira",
   "48999128752",
   true,
-  [new ContaCorrente(1000, "11301-1")],
+  [new ContaPoupanca(1, "03452-2")],
   [
     new Endereco(
       "23457-233",
@@ -40,11 +40,3 @@ const clienteUm = new Cliente(
 );
 
 const contaClienteUm = clienteUm.contas[0];
-
-contaClienteUm.depositar(100);
-
-console.log(contaClienteUm.calcularSaldo());
-
-contaClienteUm.sacar(50);
-
-console.log(contaClienteUm.calcularSaldo());

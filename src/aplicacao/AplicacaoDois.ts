@@ -2,7 +2,7 @@ import { Cliente } from "../model/cliente/Cliente";
 import { Endereco } from "../model/cliente/Endereco";
 import { ContaCorrente } from "../model/conta/ContaCorrente";
 
-var cliente = new Cliente(
+const cliente = new Cliente(
   "105.961.009-13",
   "Patrícia Santos ",
   "33356168432",

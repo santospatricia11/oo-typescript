@@ -21,11 +21,11 @@ export class ContaPoupanca extends Conta {
 
   public calcularSaldo(): number {
     let totalSaldo = this.calcularRendimento();
-
+    //somar o saldo com os creditos
     this.credito.forEach((credito) => {
       totalSaldo = totalSaldo + credito.getValor();
     });
-
+    //subtrair os creditos
     this.debito.forEach((debito) => {
       totalSaldo = totalSaldo - debito.getValor();
     });

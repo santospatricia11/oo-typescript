@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
-    "start": "npm run aplicacao_1 && npm run aplicacao_2 && npm run aplicacao_3 && npm run aplicacao_4 && npm run aplicacao_5",
-    "aplicacao_1": "tsc && node dist/aplicacao/AplicacaoUm.js",
-    "aplicacao_2": "tsc && node dist/aplicacao/AplicacaoDois.js",
-    "aplicacao_3": "tsc && node dist/aplicacao/AplicacaoTres.js",
-    "aplicacao_4": "tsc && node dist/aplicacao/AplicacaoQuatro.js",
-    "aplicacao_5": "tsc && node dist/aplicacao/AplicacaoCinco.js"
+    "start": "npm run AplicacaoUm && npm run AplicacaoDois && npm run AplicacaoTres && npm run AplicacaoQuatro && npm run AplicacaoCinco",
+    "AplicacaoUm": "tsc && node dist/aplicacao/AplicacaoUm.js",
+    "AplicacaoDois": "tsc && node dist/aplicacao/AplicacaoDois.js",
+    "AplicacaoTres": "tsc && node dist/aplicacao/AplicacaoTres.js",
+    "AplicacaoQuatro": "tsc && node dist/aplicacao/AplicacaoQuatro.js",
+    "AplicacaoCinco": "tsc && node dist/aplicacao/AplicacaoCinco.js"
   },
   "keywords": [],
   "author": "",

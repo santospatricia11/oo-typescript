@@ -1,5 +1,5 @@
 import { Conta } from "../conta/abstract/Conta";
-import { IUsuario } from "../IUsuario";
+import { IUsuario } from "../interface/IUsuario";
 import { Endereco } from "./Endereco";
 import { Pessoa } from "./abstract/Pessoa";
 

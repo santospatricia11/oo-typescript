@@ -1,6 +1,5 @@
 import { Credito } from "../Credito";
 import { Debito } from "../Debito";
-import { ExcetionErroCliente } from "../../erro/ExcetionErroCliente";
 
 export abstract class Conta {
   //private numero: String;
@@ -17,8 +16,6 @@ export abstract class Conta {
     if (this.calcularSaldo() >= valor) {
       const debito = new Debito(valor, date, this.numero);
       this.debito.push(debito);
-    } else {
-      throw new ExcetionErroCliente("Saldo insuficiente", 403);
     }
   }
 
